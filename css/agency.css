@@ -207,14 +207,13 @@ header.masthead .intro-text {
 }
 
 header.masthead .intro-text .intro-lead-in {
- 
   font-size: 55px;
   font-style: bold;
   color: rgb(255,255,255);
   text-shadow: 2px 2px 4px #000000;
   line-height: 22px;
   margin-bottom: 25px;
-      font-family: Impact, Charcoal, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header.masthead .intro-text .intro-heading {
