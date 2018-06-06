@@ -11,9 +11,53 @@
     <title>Agency - Start Bootstrap Theme</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+	
+    <link href="css/simple-sidebar.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #000000;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 19px;
+  padding: 8px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.img-circle {
+    border-radius: 50%;
+}
 .btn {
     background-color: DodgerBlue;
     border: none;
@@ -29,98 +73,138 @@
 }
 </style>
     <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this template -->
-    <link href="css/agency.min.css" rel="stylesheet">
+    <link href="css/agency.css" rel="stylesheet">
 
   </head>
 
   <body id="page-top">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+<!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
       <div class="container">
-        <a  class="navbar-brand js-scroll-trigger" href="#page-top">KyzenCS</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <img class="navbar-brand js-scroll-trigger" src="logo.png" alt=""> 
+        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav text-uppercase ml-auto">
+             <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Home</a>
+              <button class="button " href="#portfolio"	style="vertical-align:middle"> <span>Home </span></button>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">About Us</a>
+            <button class="button " href="#portfolio"	style="vertical-align:middle"> <span>About Us </span></button>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Products</a>
+               <button class="button " href="#portfolio"	style="vertical-align:middle"> <span>Services </span></button>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#team">Services</a>
+              <button class="button " href="#portfolio"	style="vertical-align:middle"> <span>Contact </span></button>
             </li>
-            <li class="nav-item">
-		
-			<a class="nav-link js-scroll-trigger" href="C:\Users\Nemo\Desktop\startbootstrap-agency-gh-pages\startbootstrap-agency-gh-pages\cap.pdf" download>Capability Statement<i class="fa fa-download"></i></a>         
-		   </li>
+           
           </ul>
         </div>
       </div>
     </nav>
 
+ 
     <!-- Header -->
     <header class="masthead">
+	       <!-- Sidebar -->
+		   
+	 <div id="wrapper">
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Start Bootstrap
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Dashboard</a>
+                </li>
+                <li>
+                    <a href="#">Shortcuts</a>
+                </li>
+                <li>
+                    <a href="#">Overview</a>
+                </li>
+                <li>
+                    <a href="#">Events</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
       <div class="container">
         <div class="intro-text">
-          <div class="intro-lead-in">Striving for Perfection</div>
+          <div class="intro-lead-in" >Striving for Perfection</div>
+		   <div class="row text-center">
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+
+              <img class="img-circle" src="sbalogo.jpg" alt="">       
+		  </span>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+			
+              <img class="img-circle" src="gsa 70 logo.jpg" alt="">      
+            </span>
+           </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+			
+              <img class="img-fluid" src="hubzonelogo.png" alt=""> 
+            </span>
+          </div>
+        </div>
+			  
           <div class="intro-heading text-uppercase"></div>
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
+          <a class="b href="cap.pdf" download>Capability Statement<i class="fa fa-download"></i>
         </div>
       </div>
     </header>
 
-  <!-- Services -->
-    <section id="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Certifications</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
 
-              <img class="img-fluid" src="C:\Users\Nemo\Desktop\KyzenRedo\sbalogo.jpg" alt="">       
-		  </span>
-            <h4 class="service-heading">SBA Certified 8(a)</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-			
-              <img class="img-fluid" src="C:\Users\Nemo\Desktop\KyzenRedo\gsa 70 logo.jpg" alt="">      
-            </span>
-            <h4 class="service-heading">GSA 70</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-			
-              <img class="img-fluid" src="C:\Users\Nemo\Desktop\KyzenRedo\hubzonelogo.png" alt=""> 
-            </span>
-            <h4 class="service-heading">HubZone</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- Portfolio Grid -->
     <section class="bg-light" id="portfolio">
@@ -139,7 +223,7 @@
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="C:\Users\Nemo\Desktop\KyzenRedo\ITProf.jpg" alt="">
+              <img class="img-fluid" src="ITProf.jpg" alt="">
             </a>
             <div class="portfolio-caption">
               <h4>IT Proffesional Services</h4>
@@ -152,7 +236,7 @@
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="C:\Users\Nemo\Desktop\KyzenRedo\cloud.png" alt="">
+              <img class="img-fluid" src="cloud.png" alt="">
             </a>
             <div class="portfolio-caption">
               <h4>Cloud Services</h4>
@@ -165,7 +249,7 @@
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="C:\Users\Nemo\Desktop\KyzenRedo\staff.jpg" alt="">
+              <img class="img-fluid" src="staff.jpg" alt="">
             </a>
             <div class="portfolio-caption">
               <h4>Staff Augmentation</h4>
@@ -178,7 +262,7 @@
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="C:\Users\Nemo\Desktop\KyzenRedo\application.jpg" alt="">
+              <img class="img-fluid" src="application.jpg" alt="">
             </a>
             <div class="portfolio-caption">
               <h4>Application Solution Services</h4>
@@ -191,7 +275,7 @@
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="C:\Users\Nemo\Desktop\KyzenRedo\business.jpg" alt="">
+              <img class="img-fluid" src="business.jpg" alt="">
             </a>
             <div class="portfolio-caption">
               <h4>Business Intelligence Services</h4>
@@ -204,7 +288,7 @@
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="C:\Users\Nemo\Desktop\KyzenRedo\bigdata.jpg" alt="">
+              <img class="img-fluid" src="bigdata.jpg" alt="">
             </a>
             <div class="portfolio-caption">
               <h4>Big Data Services</h4>
@@ -289,125 +373,6 @@
                 </div>
               </li>
             </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Team -->
-    <section class="bg-light" id="team">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
-              <h4>Kay Garland</h4>
-              <p class="text-muted">Lead Designer</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
-              <h4>Larry Parker</h4>
-              <p class="text-muted">Lead Marketer</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
-              <h4>Diana Pertersen</h4>
-              <p class="text-muted">Lead Developer</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Clients -->
-    <section class="py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/envato.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/designmodo.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/themeforest.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/creative-market.jpg" alt="">
-            </a>
           </div>
         </div>
       </div>
@@ -516,7 +481,7 @@
                   <!-- Project Details Go Here -->
                   <h2 class="text-uppercase">IT Proffesionals</h2>
                   <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-<img class="img-fluid" src="C:\Users\Nemo\Desktop\KyzenRedo\itprof.jpg" alt="">  
+<img class="img-fluid" src="itprof.jpg" alt="">  
 				  <ul>
   <li>Program/Project Management</li>
   <li>Infrastructure & Integration Support</li>
@@ -549,22 +514,17 @@
           <div class="close-modal" data-dismiss="modal">
             <div class="lr">
               <div class="rl"></div>
-            </div>
+            </div>	
           </div>
           <div class="container">
             <div class="row">
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Explore</li>
-                    <li>Category: Graphic Design</li>
-                  </ul>
+                  <h2 class="text-uppercase">Cloud Services</h2>
+                  <img class="img-fluid d-block mx-auto" src="C:\Users\Nemo\Desktop\KYZWork\KYZWork\cloud.png" alt="">
+                  <p>Our development teams are skilled in the latest technology including ASP, Java, VBScript, Jscript, CGIScript, HTML, and DHTML, and have developed numerous interactive sites that include many database-driven features like Online catalogs, Online forums, Mailing Lists, New Groups and Electronic Commerce.</p>
+                  
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
                     Close Project</button>
