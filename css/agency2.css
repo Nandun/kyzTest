@@ -185,10 +185,13 @@ img::-moz-selection {
     font-size: 1.5em;
   }
 }
+
+
+
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/aboutUS.jpg");
+  background-image: url("../img/header-bg2.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -197,9 +200,6 @@ header.masthead {
   -o-background-size: cover;
   background-size: cover;
 }
-
-
-
 
 header.masthead .intro-text {
   padding-top: 150px;
