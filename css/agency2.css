@@ -191,7 +191,7 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/aboutUS.jpg");
+  background-image: url("../img/tintedAbout.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -200,7 +200,7 @@ header.masthead {
   -o-background-size: cover;
   background-size: cover;
   
-     max-height: 110vh;
+     max-height: 90vh;
 }
 
 header.masthead .intro-text {
