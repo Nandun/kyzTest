@@ -199,6 +199,8 @@ header.masthead {
   -moz-background-size: auto;
   -o-background-size: cover;
   background-size: cover;
+  
+     max-height: 90vh;
 }
 
 header.masthead .intro-text {
