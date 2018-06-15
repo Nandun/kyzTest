@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>KyzenCS Home</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+	  
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/agency.css" rel="stylesheet">
+<style>
+	header.masthead {
+	  text-align: center;
+	  color: white;
+	  background-image: url("893.jpg");
+	  background-repeat: no-repeat;
+	  background-attachment: scroll;
+	  background-position: center center;
+	  -webkit-background-size: cover;
+	  -moz-background-size: auto;
+	  -o-background-size: cover;
+	  background-size: cover;
+		  max-height: 105vh;
+	}
+	#carousel_inner {
+    float: left;
+    width: 900px;
+    overflow: hidden;
+    background: #;
+	margin-left: 150px;
+}
+
+#carousel_ul li img {
+    width: 200px;
+    height: 200px;
+}
+
+#carousel_ul {
+    position: relative;
+    list-style-type: none;
+    margin-left: 0px;
+    padding: 0px;
+    width: 9999px;
+    padding-bottom: 10px;
+}
+
+#carousel_ul li {
+    float: left;
+    width: 200px;
+    padding: 0px;
+    height: 200px;
+    background: #000000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#carousel_ul li img {
+    cursor: pointer;
+    cursor: hand;
+    border: 0px;
+}
+
+#left_scroll, #right_scroll {
+    float: left;
+    height: 130px;
+    width: 35px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#left_scroll img, #right_scroll img {
+    border: 0;
+ /* remove the default border of linked image */
+/*styling*/
+    cursor: pointer;
+    cursor: hand;
+}
+
+#left_scroll img {
+    width: 40px;
+    height: 40px;
+}
+
+#right_scroll img {
+    width: 25px;
+    height: 25px;
+}
+</style>
+</head>
+  <body id="page-top">
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top " id="mainNav">
+      <div class="container">
+        <img class="navbar-brand js-scroll-trigger" src="logo.png" alt=""> 
+        <button class="navbar-toggler navbar-toggler-right  bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+             <ul class="navbar-nav  ml-auto">
+               <li class="nav-item">
+<a href="login2.html">
+  <button class="button" style="vertical-align:middle">Home</button>
+  </a>      
+      </li>
+            <li class="nav-item">
+            <a href="about.html">
+  <button class="button" style="vertical-align:middle">About</button>
+  </a>
+			</li>
+		<li class="nav-item">
+              	<div class="dropdown">
+  <button class="dropbtn">Products</button>
+  <div class="dropdown-content">
+    <a href="cm.html">Contract Management</a>
+    <a href="em.html">Event Management</a>
+    <a href="mm.html">Marketing Management</a>
+    <a href="vm.html">Vendor Management</a>
+    <a href="hm.html">Hiring Management</a>
+    <a href="pm.html">Project Management</a>
+  </div>
+  </div>
+		     </li>
+<a href="services.html">
+  <button class="button" style="vertical-align:middle">Services</button>
+  </a>		
+		</li>
+            <a href="contact.html">
+  <button class="button" style="vertical-align:middle">Contact</button>
+  </a>
+			<li class="nav-item">
+			<a href="login.html">
+  <button class="button" style="vertical-align:middle">Login</button>
+  </a>
+            </li>         
+        </ul>
+      </div>
+    </div>
+</nav>
+ 
+<div class="box">
+    <!-- Header -->
+    <header class="masthead">
+		   
+	
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+   
+      <div class="container">
+        <div class="intro-text">
+		
+<div class="w3-container w3-center w3-animate-opacity">
+
+<div class="w3-container w3-center w3-animate-right">
+          <div class="intro-lead-in" >Striving for Perfection</div>
+		  <br>
+		  <br>
+		
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  
+		 
+		  </div>
+		  </div>	  
+          <div class="intro-heading text-uppercase"></div>
+        </div>
+      </div>
+    </header>
+
+  <div class="cert"
+    <section id="services">
+      <div class="container">
+	  
+            <h6>Certifications</h6>
+        <div class="row">
+		
+   <div id='carousel_container'>  
+    <div id='carousel_inner'>  
+        <ul id='carousel_ul'>  
+		   <li>
+                <a href=''>
+                    <img src='HUBZone.png'/>
+                </a>
+            </li>  
+            <li>
+                <a href='#'>
+                    <img src='GSA.png'/>
+                </a>
+            </li>  
+            <li>
+                <a href='#'>
+                    <img src='cmmi.jpg'/>
+                </a>
+            </li>
+            <li>
+                  <a href='#'>
+                      <img src='mbe.png'/>
+                  </a>
+              </li>
+            <li>
+                  <a href='#'>
+                      <img src='wbenc.png'/>
+                  </a>
+              </li>
+            <li>
+                  <a href='#'>
+                      <img src='sba8alogo.png'/>
+                  </a>
+              </li>
+        </ul>  
+    </div>   
+</div>  
+   </div>
+      </div>
+    </div>
+    </section>
+ <script>
+  $(document).ready(function() {  
+  
+        //options( 1 - ON , 0 - OFF)  
+        var auto_slide = 1;  
+        var hover_pause = 1;  
+        var key_slide = 1;  
+  
+        //speed of auto slide(  
+        var auto_slide_seconds = 0;  
+        /* IMPORTANT: i know the variable is called ...seconds but it's 
+        in milliseconds ( multiplied with 1000) '*/  
+  
+        /*move the last list item before the first item. The purpose of this is 
+        if the user clicks to slide left he will be able to see the last item.*/  
+        $('#carousel_ul li:first').before($('#carousel_ul li:last'));  
+  
+        //check if auto sliding is enabled  
+        if(auto_slide == 1){  
+            /*set the interval (loop) to call function slide with option 'right' 
+            and set the interval time to the variable we declared previously */  
+            var timer = setInterval('slide("right")', auto_slide_seconds);  
+  
+            /*and change the value of our hidden field that hold info about 
+            the interval, setting it to the number of milliseconds we declared previously*/  
+            $('#hidden_auto_slide_seconds').val(auto_slide_seconds);  
+        }  
+  
+        //check if hover pause is enabled  
+        if(hover_pause == 1){  
+            //when hovered over the list  
+            $('#carousel_ul').hover(function(){  
+                //stop the interval  
+                clearInterval(timer)  
+            },function(){  
+                //and when mouseout start it again  
+                timer = setInterval('slide("right")', auto_slide_seconds);  
+            });  
+  
+        }  
+  
+        //check if key sliding is enabled  
+        if(key_slide == 1){  
+  
+            //binding keypress function  
+            $(document).bind('keypress', function(e) {  
+                //keyCode for left arrow is 37 and for right it's 39 '  
+                if(e.keyCode==37){  
+                        //initialize the slide to left function  
+                        slide('left');  
+                }else if(e.keyCode==39){  
+                        //initialize the slide to right function  
+                        slide('right');  
+                }  
+            });  
+  
+        }  
+  
+  });  
+  
+//FUNCTIONS BELLOW  
+  
+//slide function  
+function slide(where){  
+  
+            //get the item width  
+            var item_width = $('#carousel_ul li').outerWidth() + 10;  
+  
+            /* using a if statement and the where variable check 
+            we will check where the user wants to slide (left or right)*/  
+            if(where == 'left'){  
+                //...calculating the new left indent of the unordered list (ul) for left sliding  
+                var left_indent = parseInt($('#carousel_ul').css('left')) + item_width;  
+            }else{  
+                //...calculating the new left indent of the unordered list (ul) for right sliding  
+                var left_indent = parseInt($('#carousel_ul').css('left')) - item_width;  
+  
+            }  
+  
+            //make the sliding effect using jQuery's animate function... '  
+            $('#carousel_ul:not(:animated)').animate({'left' : left_indent},3000,function(){  
+  
+                /* when the animation finishes use the if statement again, and make an ilussion 
+                of infinity by changing place of last or first item*/  
+                if(where == 'left'){  
+                    //...and if it slided to left we put the last item before the first item  
+                    $('#carousel_ul li:first').before($('#carousel_ul li:last'));  
+                }else{  
+                    //...and if it slided to right we put the first item after the last item  
+                    $('#carousel_ul li:last').after($('#carousel_ul li:first'));  
+                }  
+  
+                //...and then just get back the default left indent  
+                $('#carousel_ul').css({'left' : '-210px'});  
+            });  
+  
+}  
+</script>
+</div>
+	<section>
+	<div class=bar>
+	<div>
+	</section>
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+  <!-- Features Section -->
+      <div class="row">
+        <div class="col-lg-6">
+          <h6>Welcome to Kyzen</h6>
+    
+<p> Kyzen Consulting is a complete 
+    software solutions provider. Kyzen 
+    provides a multi-faceted portfolio 
+    of products and service to it's clients, 
+    including a complete E-Commerce 
+    solution methodology, on-site and 
+    off-site software systems development, 
+    and turnkey projects.</p>
+          <p>Kyzen Consulting Services offers expertise in all phases of system and software development, from start to finish, on a wide range of hardware and software platforms, using the latest software design methodologies. We provide a multi-faceted portfolio of products and services to our clients, including a complete software solution methodology. We can work at your location or ours, providing software and systems development, consultants, subcontracting, training, and multimedia development. </p>        </div>
+        <div class="col-lg-6">
+          <img class="img-fluid rounded" src="staff.jpg" alt="">
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <hr>
+
+    </div>
+    <!-- /.container -->
+
+        </div>
+      </div>
+    </section>
+    <section class="bg-primary text-white mb-0" id="about">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-white">Capability Statement</h2>
+        <hr class="star-light mb-5">
+        <div class="row">
+      <!--    <div class="col-lg-4 ml-auto">
+            <p class="lead">Text Describing Capability statement and referencing download Link</p>
+          </div>
+          <div class="col-lg-4 mr-auto">
+            <p class="lead">Text Describing Capability statement and referencing download Link</p>
+          </div>-->
+        </div>
+        <div class="text-center mt-4">
+          <a class="btn btn-xl btn-outline-light" href="cap.pdf">
+            <i class="fa fa-download mr-2"></i>
+            Download
+          </a>
+        </div>
+      </div> 
+    </section>
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Contact Us</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <form id="contactForm" name="sentMessage" novalidate="novalidate">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <textarea class="form-control" id="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-lg-12 text-center">
+                  <div id="success"></div>
+                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright">Copyright &copy; Your Website 2018</span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline quicklinks">
+              <li class="list-inline-item">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Terms of Use</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+</div>
+</div>
+<script>
+$(".box").hide().fadeIn(2000);
+</script>
+ 
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+
+  </body>
+
+</html>
