@@ -3,147 +3,223 @@
 
   <head>
 
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>KyzenCS-Services</title>
+    <title>KyzenCS Home</title>
 
     <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+	  
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this template -->
     <link href="css/agency.css" rel="stylesheet">
 <style>
-  #loader {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 1;
-    width: 150px;
-    height: 150px;
-    margin: -75px 0 0 -75px;
-    border: 16px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 16px solid #3498db;
-    width: 120px;
-    height: 120px;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
-  }
-
-  @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
-  }
-
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-
-  /* Add animation to "page content" */
-  .animate-bottom {
-    position: relative;
-    -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 1s;
-    animation-name: animatebottom;
-    animation-duration: 1s
-  }
-
-  @-webkit-keyframes animatebottom {
-    from { bottom:-100px; opacity:0 } 
-    to { bottom:0px; opacity:1 }
-  }
-
-  @keyframes animatebottom { 
-    from{ bottom:-100px; opacity:0 } 
-    to{ bottom:0; opacity:1 }
-  }
-
-  #myDiv {
-    display: none;
-    text-align: center;
-}
-
-a.button  {
-  display: inline-block;
-  border-radius: 4px;
-  background-color: #000000;
-  border: none;
-  color: #FFFFFF;
+header.masthead {
   text-align: center;
-  font-size: 19px;
-  padding: 8px;
-  width: 120px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 10px;
-   text-decoration: none;
+  color: white;
+  background-image: url("point.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: auto;
+  -o-background-size: cover;
+  background-size: cover;
+      max-height: 50px vh;
+	  margin-bottom: 50px;
 }
-  #test p {
-      opacity: 0;
-      margin-top: 25px;
-      font-size: 21px;
-      text-align: center;
-      -webkit-transition: opacity 2s ease-in;
-      -moz-transition: opacity 2s ease-in;
-      -o-transition: opacity 2s ease-in;
-      -ms-transition: opacity 2s ease-in;
-      transition: opacity 2s ease-in;
-  }
-  #test p.load {
-      opacity: 1;
-  }
-
-a.button:hover{
-color: #0FFFFF;
- background-color: #4CAF50;
-    color: white;
-}
-
-.img-circle {
-    border:5px  solid white;
-    border-radius: 50%;
-	
-}
-.btn {
-    background-color: DodgerBlue;
-    border: none;
-    color: white;
-    font-size: 15px;
-    cursor: pointer;
-    font-size: 15px;
-}
+/**
+Created by Sobola Timilehin David
+*/
+@import url(https://use.fontawesome.com/releases/v5.0.11/css/all.css);
+html,
 body {
-  padding-top: 100px;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 85%;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+}
+* {
+  box-sizing: border-box;
+}
+*:focus {
+  outline-width: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+:root {
+  --primary: peru;
+  --dark: #c0c0;
+  --light: #fff;
+  --grad1: rgba(205, 134, 63, 0.767);
+  --grad2: rgba(205, 134, 63, 0.3);
+}
+.login-wrapper {
+    position: absolute;
+  top: 25%;
+  bottom: 25%;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+.login-card {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+    perspective: 1000px;
+    padding: 0;
+}
+.login-card , .login-inner {
+    width: 350px;
+}
+.inner {
+    transition: 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.inner:hover {
+    transform: rotateY(180deg);
+}
+.login-inner{
+    background: #fff;
+    padding: 10px;
+    margin: 0;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    backface-visibility: hidden;
+}
+.login-header {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    margin: 0;
+    align-items: center;
+    color: var(--primary);
+    padding: 10px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+.login-header h2 {
+    font-size: 20px;
+    padding-bottom: 0;
+  margin: 0;
+}
+.login-header h3 {
+    color: #000;
+    font-size: 26px;
+    margin-bottom: 0;
+}
+.login-header p {
+    color: dark-blue;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+.login-card-title {
+    text-align: left;
+    position: relative;
+    color: dark-blue;
+    padding: 5px 10px 0 0;
+    font-size: 26px;
 }
 
-@media (min-width: 992px) {
-  body {
-    padding-top: 56px;
-  }
+.login-group {
+    display: block;
+    margin: auto;
+    padding: 10px;
+    margin: 0;
 }
-
-.portfolio-item {
-  margin-bottom: 30px;
+.login-group .login-control {
+    width: 300px;
+    padding: 10px;
+    border: 0;
+    border-bottom: 1px solid var(--primary);
+    transition: all 0.6s ease-in-out;
 }
-
-.pagination {
-  margin-bottom: 30px;
+input:focus{
+    border: 0;
+    border-bottom: 2px solid var(--primary);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
 }
-
+.login-btn-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-btn-group p a{
+    padding: 10px;
+}
+.login-group button {
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    background: var(--primary);
+    border-radius: .3rem;
+    box-shadow: 0 0 5px var(--grad1);
+    border: 1px solid var(--grad2);
+    color: #fff;
+    transition: all 500ms ease-in-out;
+}
+.login-group button:hover, .login-group button:focus {
+    cursor: pointer;
+    background: var(--primary);
+    border-radius: .3rem;
+    box-shadow: 0 0 5px var(--grad1);
+    border: 1px solid var(--grad2);
+    color: #fff;
+}
+.login-bottom {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+#login-select {
+    border: none;
+    background: transparent;
+}
+.login-footer span a{
+    color: var(--primary);
+}
+.login-nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+</style>
 </style>
   </head>
-
-  <body onload="myFunction()" style="margin:0;">
-
-   	  
-<div class="w3-container w3-center w3-animate-opacity"> 
-    <nav class="navbar navbar-expand-lg bg-secondary fixed-top " id="mainNav">
+  <body>
+     <nav class="navbar navbar-expand-lg bg-secondary fixed-top " id="mainNav">
       <div class="container">
         <img class="navbar-brand js-scroll-trigger" src="logo.png" alt=""> 
         <button class="navbar-toggler navbar-toggler-right  bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -153,389 +229,148 @@ body {
         <div class="collapse navbar-collapse" id="navbarResponsive">
              <ul class="navbar-nav  ml-auto">
                <li class="nav-item">
-               <a href="index.html" class="button" style="vertical-align:middle">Home</a>
-            </li>
+<a href="index.html">
+  <button class="button" style="vertical-align:middle">Home</button>
+  </a>      
+      </li>
             <li class="nav-item">
-              <a href="aboutus.html" class="button" style="vertical-align:middle">About</a>
-            </li>
+            <a href="about.html">
+  <button class="button" style="vertical-align:middle">About</button>
+  </a>
+			</li>
 		<li class="nav-item">
               	<div class="dropdown">
   <button class="dropbtn">Products</button>
   <div class="dropdown-content">
     <a href="cm.html">Contract Management</a>
-    <a href="#">Event Management</a>
-    <a href="#">Marketing Management</a>
-    <a href="#">Vendor Management</a>
-    <a href="#">Hiring Management</a>
-    <a href="#">Project Management</a>
-    <a href="#">Sales Force Management</a>
+    <a href="em.html">Event Management</a>
+    <a href="mm.html">Marketing Management</a>
+    <a href="vm.html">Vendor Management</a>
+    <a href="hm.html">Hiring Management</a>
+    <a href="pm.html">Project Management</a>
   </div>
   </div>
-		     </li>
-		     	<li class="nav-item">
-           <a href="4col.html" class="button" style="vertical-align:middle">Services</a>
-            </li>
-            <li class="nav-item">
-               <a href="contact.html" class="button" style="vertical-align:middle">Contact</a>
-            </li>
-            <li class="nav-item">
-  <a href="indextest.html" class="button" style="vertical-align:middle">Login</a>
-            </li>
-           
-          </ul>
-        </div>
+		      </li>
+<a href="services.html">
+  <button class="button" style="vertical-align:middle">Services</button>
+  </a>		
+		</li>
+            <a href="contact.html">
+  <button class="button" style="vertical-align:middle">Contact</button>
+  </a>
+			<li class="nav-item">
+			<a href="login.html">
+  <button class="button" style="vertical-align:middle">Login</button>
+  </a>
+            </li>           
+        </ul>
       </div>
-    </nav>
-</div>
- 
-<div id="loader"></div>
-
-<div style="display:none;" id="myDiv" class="animate-bottom">
-
-    <!-- Page Content -->
-    <div class="container">
-
-      <!-- Page Heading -->
-      <h1 class="my-4">Page Heading
-        <small>Secondary Text</small>
-      </h1>
-
-      <div class="row">
-	    <!-- CARDDDDDD -->
-        <div class="col-lg-3 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="GSA.jpg" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-          <p>Some text in the modal.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
     </div>
-  </div>
-  
-              </h4>
-   </div>
-          </div>
-        </div>
-		
-	    <!-- CARDDDDDD -->
-		<!-- CARDDDDDD -->
-        <div class="col-lg-3 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="MBE LOGO.png" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-          <p>Some text in the modal.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-  
-              </h4>
-   </div>
-          </div>
-        </div>
-		
-	    <!-- CARDDDDDD -->
-		
-		<!-- CARDDDDDD -->
-        <div class="col-lg-3 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="hubzoneLogo.png" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-          <p>Some text in the modal.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-  
-              </h4>
-   </div>
-          </div>
-        </div>
-		
-	    <!-- CARDDDDDD -->
-		<!-- CARDDDDDD -->
-        <div class="col-lg-3 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="wbenc.jpg" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-          <p>Some text in the modal.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-  
-              </h4>
-   </div>
-          </div>
-        </div>
-		
-	    <!-- CARDDDDDD --><!-- CARDDDDDD -->
-        <div class="col-lg-3 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="GSA.jpg" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-          <p>Some text in the modal.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-  
-              </h4>
-   </div>
-          </div>
-        </div>
-		
-	    <!-- CARDDDDDD -->
-		<!-- CARDDDDDD -->
-        <div class="col-lg-3 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="GSA.jpg" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-          <p>Some text in the modal.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-  
-              </h4>
-   </div>
-          </div>
-        </div>
-		
-	    <!-- CARDDDDDD -->
-		<!-- CARDDDDDD -->
-        <div class="col-lg-3 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="hubzonelogo.png" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-          <p>Some text in the modal.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-  
-              </h4>
-   </div>
-          </div>
-        </div>
-		
-	    <!-- CARDDDDDD -->
-		<!-- CARDDDDDD -->
-        <div class="col-lg-3 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="WBENClogo.jpg" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-          <p>Some text in the modal.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-  
-              </h4>
-   </div>
-          </div>
-        </div>
-		
-	    <!-- CARDDDDDD -->
-      <!-- /.row -->
-
-      <!-- Pagination -->
-      <ul class="pagination justify-content-center">
-        <li class="page-item">
-          <a class="page-link" href="#" aria-label="Previous">
-            <span aria-hidden="true">&laquo;</span>
-            <span class="sr-only">Previous</span>
-          </a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#">1</a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#">2</a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#">3</a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#" aria-label="Next">
-            <span aria-hidden="true">&raquo;</span>
-            <span class="sr-only">Next</span>
-          </a>
-        </li>
-      </ul>
-
-    </div>
-    <!-- /.container -->
-
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
-      </div>
-      <!-- /.container -->
-    </footer>
+</nav>
+    <header class="masthead">
+		   
 	
-</div>
-<script>
-var myVar;
 
-function myFunction() {
-    myVar = setTimeout(showPage, 3000);
-}
-
-function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("myDiv").style.display = "block";
-}
-</script>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+   
+      <div class="container">
+        <div class="intro-text">
+		
+<div class="w3-container w3-center w3-animate-opacity">
+
+<div class="w3-container w3-center w3-animate-right">
+          <div class="intro-lead-in" >Products</div>
+		  <br>
+		  <br>
+		
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  
+		 
+		  </div>
+		  </div>	  
+          <div class="intro-heading text-uppercase"></div>
+        </div>
+      </div>
+    </header>
+ <div class="container">
+
+      <div class="row">
+        <div class="col-lg-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="img/1.jpg" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Project Management</a>
+              </h4>
+<p>Project Management Office (PM Office) is a web based tool that can be used to control the simple or complex projects. PM Office is about aligning people, projects and organizational priorities. This tool can helps the organizations in efficient and effective management of resources and both project-based and ongoing activities.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="img/2.jpg" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Contract Management</a>
+              </h4>
+              <p class="card-text">Contract Management System (CMS) is web enabled, customizable secure system to manage vendor relations. CMS provides a user friendly interface between a company and its vendor.It enables the company to quickly respond to fill in job requirement using vendor resources. The vendor can use this system to track the job requests and manage contracts.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="img/3.jpg" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Event Management</a>
+              </h4>
+              <p class="card-text">Event Management System is a web-based tool that facilitates online registration, payment, resource management, web-based accounting and reporting functionality. This web-enabled, customizable secure system ensure users authentication to access the system. The back office staff can take advantage of an intuitive transaction and reporting interface with a minimum of training.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="img/4.jpg" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Marketing Management</a>
+              </h4>
+              <p class="card-text">Marketing Management System is a web based Marketing Management system through which a company advertises it's available products. This tool helps the organizations in efficient and effective marketing of products and increasing it's sales. Therby increasing overall revenue.</p>            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="img/5.jpg" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Vendor Management</a>
+              </h4>
+              <p class="card-text">Vendor management system is Web-enabled, customizable secure system to manage vendor relations. It can provide you a single, unified view to understand how your company uses contractors and how much you are spending on them. It can also help you significantly shorten the time it takes to fill a request for a vendor resource.</p>            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="img/6.jpg" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Hiring Management</a>
+              </h4>
+              <p class="card-text">Hiring Management System is a web based recruitment Management system through which a company fulfills the requirement of its client’s. This particular system works around business development officer (BDO), recruiter, employee/Consultant and vendor. Recruiters to search the applicant from different sources.</p>
+			  </div>
+          </div>
+        </div>
+      </div>
+      </row>
+	
+      
   </body>
 
 </html>
